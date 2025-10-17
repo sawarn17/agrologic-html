@@ -1,9 +1,9 @@
 <!-- navbar.html -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4">
-  <a class="navbar-brand d-flex align-items-center" href="#">
-    <img src="logo.png" alt="Aerologic Innovations Logo" height="30" class="me-2">
-    <span>Aerologic Innovations</span>
-  </a>
+  <div class="logo-wrapper d-inline-flex align-items-center px-2 py-1 rounded">
+  <img src="../images/app-logo.svg" alt="Aerologic Innovations Logo" height="30" class="me-2">
+  <span class="logo-text fw-semibold">Aerologic Innovations</span>
+</div>
   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -12,7 +12,8 @@
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav ms-auto">
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="inventivAi" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        <a class="nav-link dropdown-toggle" href="#" id="inventivAi" role="button" data-bs-toggle="dropdown"
+          aria-expanded="false">
           InventivAI
         </a>
         <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="inventivAi">
@@ -22,7 +23,8 @@
       </li>
 
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="about" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        <a class="nav-link dropdown-toggle" href="#" id="about" role="button" data-bs-toggle="dropdown"
+          aria-expanded="false">
           About
         </a>
         <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="about">
@@ -32,7 +34,8 @@
       </li>
 
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="services" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        <a class="nav-link dropdown-toggle" href="#" id="services" role="button" data-bs-toggle="dropdown"
+          aria-expanded="false">
           Services
         </a>
         <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="services">
@@ -42,7 +45,8 @@
       </li>
 
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="industries" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        <a class="nav-link dropdown-toggle" href="#" id="industries" role="button" data-bs-toggle="dropdown"
+          aria-expanded="false">
           Industries
         </a>
         <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="industries">
@@ -56,7 +60,8 @@
       </li>
 
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="resources" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        <a class="nav-link dropdown-toggle" href="#" id="resources" role="button" data-bs-toggle="dropdown"
+          aria-expanded="false">
           Resources
         </a>
         <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="resources">
@@ -67,3 +72,14 @@
     </ul>
   </div>
 </nav>
+<style>
+  .logo-wrapper {
+    background-color: #3361E1;      /* Background behind logo */
+    color: #D9FAE8;                 /* Text color */
+  }
+
+  .logo-text {
+    color: #D9FAE8;                 /* Ensure text color is applied */
+    font-size: 1rem;
+  }
+</style>
