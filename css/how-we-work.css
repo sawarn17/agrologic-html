@@ -1,0 +1,48 @@
+.work {
+    background-color: #000;
+    /* Black background */
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.section-title {
+    color: #8bc34a;
+    /* Light green */
+}
+
+.card-custom {
+    background-color: #121212;
+    border: none;
+    border-radius: 15px;
+    padding: 25px;
+    color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+}
+
+.card-custom:hover {
+    transform: translateY(-5px);
+}
+
+.step-number {
+    background-color: #c5e1a5;
+    color: #000;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    margin: 0 auto 15px auto;
+}
+
+.icon {
+    font-size: 2rem;
+    color: #8bc34a;
+    margin-bottom: 15px;
+}
+
+.highlight {
+    color: #ffffff;
+}
