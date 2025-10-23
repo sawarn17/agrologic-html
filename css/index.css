@@ -1,0 +1,52 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Section Background (Canada-themed) */
+.why-choose-us {
+  background: url('https://upload.wikimedia.org/wikipedia/commons/d/d9/Flag_of_Canada_%28leaf%29.svg') center/cover no-repeat fixed;
+  background-color: rgba(255, 255, 255, 0.9);
+  background-blend-mode: lighten;
+}
+
+/* Box Styling */
+.box {
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 12px;
+  padding: 30px 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+
+.box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* Icons */
+.box i {
+  font-size: 40px;
+  color: #d52b1e; /* Canada red */
+  margin-bottom: 15px;
+}
+
+/* Headings */
+.box h5 {
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Paragraphs */
+.box p {
+  color: #555;
+  font-size: 14px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .box {
+    margin-bottom: 20px;
+  }
+}
