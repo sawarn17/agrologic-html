@@ -138,6 +138,7 @@ bg-dark-section {
   font-weight: bold;
   padding: 0.6rem 1.5rem;
   border-radius: 2rem;
+  float: right;
   transition: background-color 0.3s ease;
 }
 
