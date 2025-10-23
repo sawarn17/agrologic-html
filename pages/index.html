@@ -24,6 +24,17 @@
       $("#howWeWorkSection").load('./how-we-work.html');
     });
 
+    $(document).ready(function(){
+      $(".service-card").hover(
+        function() {
+          $(this).find("button").animate({ opacity: 0.8 }, 200);
+        },
+        function() {
+          $(this).find("button").animate({ opacity: 1 }, 200);
+        }
+      );
+    });
+
     //footer js
     $(document).ready(function () {
       $('#footerArea').load('./footer-2.html');
@@ -35,6 +46,78 @@
   <!-- Navbar Placeholder -->
   <div id="banner"></div>
   <div id="navbar"></div>
+
+  <!-- Service Body-->
+  <div class="service-body" style="background-color: rgb(5, 5, 5);">
+    <section class="services-section container">
+      <h2 class="services-paragraph">Our Services</h2>
+      <p class="services-paragraph">
+        <strong>What Solutions We Provide</strong>-Founded with a vision to deliver comprehensive IT and media solutions, Aerologic Innovations has quickly grown
+        into a trusted partner for organizations seeking reliability, security, and enhanced digital presence. Aerologic
+        delivers a full suite of services that range from IT hardware and software resale to cybersecurity solutions, IT
+        support, and digital media services—all backed by a team of highly skilled professionals committed to client
+        success.
+      </p>
+
+      <!-- Top Row (3 Boxes) -->
+      <div class="row g-4 justify-content-center mb-3">
+        <div class="col-md-4 col-sm-6">
+          <div class="service-card h-100">
+            <img src="../images/it-support-index.png" alt="It Support"
+              class="service-icon">
+            <div class="service-title">IT Support Services</div>
+            <div class="service-text">Aerologic provides responsive, round-the-clock IT support to keep your business operations running smoothly.</div>
+            <button class="btn btn-outline-dark">Read More</button>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+          <div class="service-card h-100">
+            <img src="../images/cyber-security-index.png" alt="Cybersecurity"
+              class="service-icon">
+            <div class="service-title">Cybersecurity</div>
+            <div class="service-text">Aerologic's cybersecurity solutions are designed to protect your business from today’s complex digital threats.
+            </div>
+            <button class="btn btn-outline-dark">Read More</button>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+          <div class="service-card h-100">
+            <img
+              src="../images/media-services-index.png"
+              alt="media service" class="service-icon">
+            <div class="service-title">Media Services</div>
+            <div class="service-text">Aerologic provides a suite of media services to help your business enhance its digital presence and communication strategies.</div>
+            <button class="btn btn-outline-dark">Read More</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Row (2 Boxes) -->
+      <div class="row g-4 justify-content-center">
+        <div class="col-md-4 col-sm-6">
+          <div class="service-card h-100">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_Maps_icon.svg" alt="It Hardware"
+              class="service-icon">
+            <div class="service-title">IT Hardware and Software Resale</div>
+            <div class="service-text">Aerologic offers a comprehensive selection of high-quality IT hardware and software solutions to meet the demands of modern businesses.</div>
+            <button class="btn btn-outline-dark">Read More</button>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+          <div class="service-card h-100">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/5f/YouTube_social_white_square_%282017%29.svg"
+              alt="Network service" class="service-icon">
+            <div class="service-title">Network Solutions</div>
+            <div class="service-text">Setup secure, scalable network infrastructure for offices and data centers. IT Service & Consulting Strategy, setup, managed support, and digital transformation tailored to your business goals.</div>
+            <button class="btn btn-outline-dark">Read More</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
 
 
   <div style="background-color: #f5f7ac;">
@@ -76,14 +159,16 @@
             <div class="box">
               <i class="bi bi-heart"></i>
               <h5>Proactive and Responsive Support</h5>
-              <p>With offices in India and Australia, we combine global reach with local support for seamless service delivery</p>
+              <p>With offices in India and Australia, we combine global reach with local support for seamless service
+                delivery</p>
             </div>
           </div>
           <div class="col-md-4 mb-4">
             <div class="box">
               <i class="bi bi-lightbulb"></i>
               <h5>Global Presence with Local Expertise</h5>
-              <p>With offices in India and Australia, we combine global reach with local support for seamless service delivery</p>
+              <p>With offices in India and Australia, we combine global reach with local support for seamless service
+                delivery</p>
             </div>
           </div>
         </div>
