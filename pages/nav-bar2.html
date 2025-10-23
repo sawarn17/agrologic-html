@@ -1,0 +1,92 @@
+<div>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <!-- Logo + Name -->
+            <a class="navbar-brand" href="#">
+                <img src="../images/app-logo.jpeg" alt="Logo"> <!-- 🔹 Replace with your logo file -->
+                <span>Aerologic</span>Innovations
+            </a>
+
+            <!-- Hamburger Button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navbar Links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./service.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Testimonials</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./about-us.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Team</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                </ul>
+
+                <!-- Icons -->
+                <div class="navbar-icons d-flex align-items-center">
+                    <i class="bi bi-cart"></i>
+                    <i class="bi bi-twitter"></i>
+                    <i class="bi bi-instagram"></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+</div>
+
+<style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar {
+      background-color: #ffffff;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .navbar-brand {
+      font-size: 1.5rem;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .navbar-brand img {
+      height: 40px;
+      width: 40px;
+      object-fit: contain;
+    }
+
+    .navbar-brand span {
+      color: #3cb49a; /* greenish blue */
+    }
+
+    .nav-link {
+      color: #444 !important;
+      font-weight: 500;
+      margin-right: 15px;
+      transition: color 0.3s ease;
+    }
+
+    .nav-link:hover {
+      color: #3cb49a !important;
+    }
+
+    .navbar-icons i {
+      color: #444;
+      margin-left: 10px;
+      cursor: pointer;
+      transition: color 0.3s ease;
+      font-size: 1.2rem;
+    }
+
+    .navbar-icons i:hover {
+      color: #3cb49a;
+    }
+  </style>
