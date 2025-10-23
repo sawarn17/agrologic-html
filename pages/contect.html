@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact Us — Company</title>
+  <!-- Bootstrap 5 CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    :root{
+      --brand:#3361E1;
+      --muted:#6c757d;
+      --glass: rgba(255,255,255,0.85);
+    }
+
+    body{
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      background-color:#f5f7fb;
+      color:#222;
+    }
+
+    /* Hero with background image */
+    .hero{
+      background-image: linear-gradient(180deg, rgba(51,97,225,0.85), rgba(51,97,225,0.6)), url('https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=1600&q=60');
+      background-size:cover;
+      background-position:center;
+      padding:6rem 0 3rem;
+      color: white;
+    }
+
+    .hero .card{
+      background: rgba(255,255,255,0.08);
+      backdrop-filter: blur(6px);
+      border: none;
+    }
+
+    .contact-card{
+      margin-top: -3.5rem; /* lift up over hero */
+      box-shadow: 0 10px 30px rgba(30,40,60,0.08);
+      border-radius: 14px;
+      overflow: hidden;
+    }
+
+    /* Form styling */
+    .form-control:focus{
+      box-shadow: 0 0 0 0.15rem rgba(51,97,225,0.18);
+      border-color: var(--brand);
+    }
+
+    .btn-brand{
+      background:var(--brand);
+      color:white;
+      border:0;
+      padding:0.65rem 1.1rem;
+      border-radius:8px;
+    }
+
+    .contact-info .icon{
+      width:48px;height:48px;border-radius:10px;display:flex;align-items:center;justify-content:center;background:#fff;box-shadow:0 6px 18px rgba(40,50,80,0.06);margin-right:0.75rem;
+    }
+
+    /* Responsive tweaks */
+    @media (max-width:767px){
+      .hero{padding:3.5rem 0 2rem}
+      .contact-card{margin-top:-2.5rem}
+    }
+
+    /* Simple footer */
+    footer{
+      padding:2rem 0;
+      color:var(--muted);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 text-lg-start text-center">
+          <h1 class="display-5 fw-bold">Get in touch with us</h1>
+          <p class="lead mb-0">Have questions, feedback or need support? Drop a message and our team will reply within 1–2 business days.</p>
+        </div>
+        <div class="col-lg-6 text-lg-end text-center mt-4 mt-lg-0">
+          <img src="https://via.placeholder.com/220x120?text=Logo" alt="Company logo" style="filter:invert(1) grayscale(1);opacity:0.95;"/>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- CONTACT CARD -->
+  <main class="container">
+    <div class="contact-card card p-0 mt-4">
+      <div class="row g-0">
+        <!-- Left: Form -->
+        <div class="col-lg-7 p-4 p-lg-5">
+          <h3 class="mb-3">Send us a message</h3>
+          <p class="text-muted">Tell us a little about your request so we can route it to the right team.</p>
+
+          <form id="contactForm" novalidate>
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <label class="form-label">Full name</label>
+                <input type="text" class="form-control" id="name" placeholder="Jane Doe" required>
+                <div class="invalid-feedback">Please enter your name.</div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <label class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="you@example.com" required>
+                <div class="invalid-feedback">Please enter a valid email.</div>
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label">Subject</label>
+              <input type="text" class="form-control" id="subject" placeholder="Order / Support / Partnership" required>
+              <div class="invalid-feedback">Please enter a subject.</div>
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label">Message</label>
+              <textarea class="form-control" id="message" rows="5" placeholder="How can we help?" required></textarea>
+              <div class="invalid-feedback">Please write a message.</div>
+            </div>
+
+            <div class="d-flex align-items-center gap-2">
+              <button type="submit" class="btn btn-brand">Send message</button>
+              <button type="reset" class="btn btn-outline-secondary">Reset</button>
+              <div id="formStatus" class="ms-3 text-success" style="display:none">Message sent ✅</div>
+            </div>
+          </form>
+
+        </div>
+
+        <!-- Right: Contact details -->
+        <div class="col-lg-5 bg-white p-4 p-lg-5 contact-info">
+          <h5>Contact details</h5>
+          <p class="text-muted">Prefer a direct channel? Use the phone or email below — we're here Monday to Friday.</p>
+
+          <div class="d-flex align-items-start mb-3">
+            <div class="icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24"><path stroke="#3361E1" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 5.6A2.6 2.6 0 0 1 5.6 3h12.8A2.6 2.6 0 0 1 21 5.6v12.8A2.6 2.6 0 0 1 18.4 21H5.6A2.6 2.6 0 0 1 3 18.4V5.6z"></path><path stroke="#3361E1" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8.5 11.5l2.5 2 4-5"></path></svg>
+            </div>
+            <div>
+              <div class="fw-semibold"> Head-Office</div>
+              <div class="text-muted">56/57, KH.No - 61/13/2  C-, Block, Anandpur Dham, Karala,  New Delhi, India.</div>
+            </div>
+          </div>
+
+          <div class="d-flex align-items-start mb-3">
+            <div class="icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24"><path stroke="#3361E1" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M22 16.92V21a1 1 0 0 1-1.11 1A19 19 0 0 1 3 5.11 1 1 0 0 1 4 4h4.09a1 1 0 0 1 1 .75c.12.83.36 1.64.72 2.4a1 1 0 0 1-.24 1.06L8.7 10.7a12.24 12.24 0 0 0 5.6 5.6l1.5-1.86a1 1 0 0 1 1.06-.24c.76.36 1.57.6 2.4.72a1 1 0 0 1 .75 1V21z"></path></svg>
+            </div>
+            <div>
+              <div class="fw-semibold">Phone</div>
+              <div class="text-muted">+012 345 67890</div>
+            </div>
+          </div>
+
+          <div class="d-flex align-items-start mb-3">
+            <div class="icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24"><path stroke="#3361E1" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 8.5a4.5 4.5 0 1 1-9 0 4.5 4.5 0 0 1 9 0z"></path><path stroke="#3361E1" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M14.5 21v-2.3a4.2 4.2 0 0 0-4.2-4.2H6.3"></path></svg>
+            </div>
+            <div>
+              <div class="fw-semibold">Email</div>
+              <div class="text-muted">sales@aerologicinnovations.com</div>
+            </div>
+          </div>
+
+          <hr>
+
+          <h6 class="mb-2">Business hours</h6>
+          <div class="text-muted small">Mon - Fri: 9:30 — 18:00<br>Sat: 10:00 — 14:00<br>Sun: Closed</div>
+
+          <!-- Map placeholder -->
+          <div class="mt-4">
+            <div style="width:100%;height:160px;background:#eef3ff;border-radius:10px;display:flex;align-items:center;justify-content:center;color:var(--muted);">Map iframe / image</div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Small note -->
+    <div class="text-center mt-3 text-muted small">We respect your privacy. Your details will only be used to respond to your inquiry.</div>
+
+  </main>
+
+  <footer class="container text-center mt-5">
+    <hr>
+    <div class="d-flex justify-content-between align-items-center flex-column flex-md-row gap-2">
+      <div>© <span id="year"></span> Company Name. All rights reserved.</div>
+      <div class="text-muted small">Made with care • Privacy • Terms</div>
+    </div>
+  </footer>
+
+  <script>
+    // set year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Basic client-side validation and fake submit behaviour
+    (function(){
+      const form = document.getElementById('contactForm');
+      const status = document.getElementById('formStatus');
+
+      form.addEventListener('submit', function(e){
+        e.preventDefault();
+        if(!form.checkValidity()){
+          form.classList.add('was-validated');
+          return;
+        }
+
+        // Fake submit: show success message
+        status.style.display = 'inline-block';
+        status.textContent = 'Sending...';
+
+        setTimeout(()=>{
+          status.textContent = 'Message sent ✅';
+          form.reset();
+          form.classList.remove('was-validated');
+        }, 900);
+      });
+    })();
+  </script>
+
+  <!-- Bootstrap JS (optional) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
