@@ -1,0 +1,124 @@
+body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #ffffff;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* HERO SECTION */
+    .hero-section {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 3rem 1rem;
+      background-color: #fff;
+    }
+
+    .hero-content h1 {
+      font-size: 2.8rem;
+      font-weight: 700;
+      color: #1a1a1a;
+    }
+
+    .hero-content p {
+      font-size: 1.1rem;
+      color: #555;
+      margin-top: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    .hero-btn {
+      background-color: #1e2b6f;
+      color: #fff;
+      border-radius: 50px;
+      padding: 0.8rem 2rem;
+      text-decoration: none;
+      transition: 0.3s ease;
+      display: inline-block;
+    }
+
+    .hero-btn:hover {
+      background-color: #0f1a4f;
+      color: #fff;
+    }
+
+    /* IMAGE SECTION */
+    .image-wrapper {
+      position: relative;
+      width: 100%;
+      border-radius: 20px;
+      overflow: hidden;
+    }
+
+    .image-wrapper img {
+      width: 100%;
+      height: auto;
+      border-radius: 20px;
+      object-fit: cover;
+    }
+
+    /* Decorative shapes */
+    .shape-top-right {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 150px;
+      height: 150px;
+      background-color: #ff5b5b;
+      border-bottom-left-radius: 120px;
+    }
+
+    .shape-bottom-left {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 150px;
+      height: 150px;
+      background-color: #3b4371;
+      border-top-right-radius: 120px;
+    }
+
+    .circle-outline {
+      position: absolute;
+      top: 20px;
+      right: 40px;
+      width: 140px;
+      height: 140px;
+      border: 1px solid rgba(255, 255, 255, 0.5);
+      border-radius: 50%;
+    }
+
+    /* RESPONSIVE DESIGN */
+    @media (max-width: 991px) {
+      .hero-section {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .hero-content {
+        margin-bottom: 2rem;
+      }
+
+      .hero-content h1 {
+        font-size: 2rem;
+      }
+
+      .image-wrapper {
+        max-width: 90%;
+        margin: 0 auto;
+      }
+
+      .shape-top-right,
+      .shape-bottom-left {
+        width: 100px;
+        height: 100px;
+      }
+
+      .circle-outline {
+        width: 100px;
+        height: 100px;
+        top: 10px;
+        right: 25px;
+      }
+    }
