@@ -82,3 +82,104 @@ html {
 .custom-box .right-icon {
     font-size: 18px;
 }
+
+.global-section {
+    display: flex;
+    flex-wrap: wrap;
+    background: linear-gradient(90deg, #0d1b63 50%, #2b0f68 50%);
+    min-height: 100vh;
+}
+
+.map-container {
+    flex: 1;
+    min-width: 300px;
+    background: url('https://upload.wikimedia.org/wikipedia/commons/8/80/World_map_-_low_resolution_blue.png') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.flag-line {
+    position: absolute;
+    width: 100px;
+    height: 2px;
+    background-color: #ff00ff;
+    top: 50%;
+    left: 55%;
+    transform: rotate(-30deg);
+}
+
+.flag-icon {
+    position: absolute;
+    left: 65%;
+    top: 52%;
+    width: 100px;
+}
+
+.pin {
+    position: absolute;
+    top: 42%;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    background-color: #ff00ff;
+    border-radius: 50%;
+    border: 3px solid #fff;
+}
+
+.content-container {
+    flex: 1;
+    min-width: 300px;
+    padding: 60px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: linear-gradient(180deg, #1d084d, #2d1b68);
+}
+
+.content-container h2 {
+    font-weight: 700;
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+.presence-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 40px;
+}
+
+.presence-number {
+    background-color: #1b1e5a;
+    padding: 20px 30px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #fff;
+    clip-path: polygon(50% 0%, 100% 20%, 100% 80%, 50% 100%, 0 80%, 0 20%);
+    margin-right: 20px;
+}
+
+.presence-details h4 {
+    font-weight: 600;
+}
+
+.presence-details p {
+    margin: 0;
+    color: #cfd3ff;
+}
+
+@media (max-width: 992px) {
+    .global-section {
+        flex-direction: column;
+    }
+
+    .map-container {
+        height: 300px;
+    }
+
+    .flag-icon {
+        width: 70px;
+    }
+}

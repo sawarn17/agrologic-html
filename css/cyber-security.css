@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #0b1023;
+    color: white;
+}
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    background: url('../images/cyber-secuirty.png') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    padding: 0 5%;
+    color: #fff;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(10, 10, 25, 0.8);
+    z-index: 0;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 700px;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.hero-content p {
+    font-size: 1.1rem;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    color: #cfd3e0;
+}
+
+.btn-primary {
+    background: linear-gradient(90deg, #2563eb, #1e40af);
+    border: none;
+    border-radius: 30px;
+    padding: 10px 25px;
+}
+
+.btn-outline-light {
+    border-radius: 30px;
+    padding: 10px 25px;
+}
+
+/* Card Section */
+.cards-section {
+    background: linear-gradient(180deg, #0b1023 0%, #0e1535 100%);
+    padding: 80px 0;
+    text-align: center;
+}
+
+.card-custom {
+    background-color: #131b3b;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    color: white;
+    padding: 30px 20px;
+    transition: transform 0.3s ease;
+
+    width: 100%;
+    max-width: 320px;   /* keeps a nice width limit on large screens */
+    height: 220px;      /* fixed visual height */
+    overflow: hidden;   /* hides extra content if too long */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-custom:hover {
+    transform: translateY(-10px);
+    background-color: #182250;
+}
+
+.card-custom i {
+    font-size: 40px;
+    color: #00d4ff;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .hero-section {
+        height: auto;
+        padding: 100px 5%;
+    }
+}
