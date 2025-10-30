@@ -10,36 +10,9 @@
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <link rel="stylesheet" href="../css/index.css">
-  <script>
-
-    $(document).ready(function () {
-      $('#navbar').load('./nav-bar2.html');
-    });
-
-    $(document).ready(function () {
-      $("#howWeWorkSection").load('./how-we-work.html');
-    });
-
-    $(document).ready(function(){
-      $(".service-card").hover(
-        function() {
-          $(this).find("button").animate({ opacity: 0.8 }, 200);
-        },
-        function() {
-          $(this).find("button").animate({ opacity: 1 }, 200);
-        }
-      );
-    });
-
-    //footer js
-    $(document).ready(function () {
-      $('#footerArea').load('./footer-2.html');
-    });
-  </script>
 </head>
 
 <body>
-  <!-- Navbar Placeholder -->
   <div id="navbar"></div>
 
   <!-- Service Body-->
@@ -78,7 +51,7 @@
             <div class="service-title">Cybersecurity</div>
             <div class="service-text">Aerologic's cybersecurity solutions are designed to protect your business from today’s complex digital threats.
             </div>
-            <button class="btn btn-outline-dark">Read More</button>
+            <button class="btn btn-outline-dark" id="cyberSecurity">Read More</button>
           </div>
         </div>
 
@@ -178,6 +151,7 @@
 
   <div id="howWeWorkSection"></div>
   <div id="footerArea"></div>
+  <script src="../scripts/index.js"></script>
 </body>
 
 </html>
