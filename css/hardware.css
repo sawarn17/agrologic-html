@@ -1,0 +1,90 @@
+ body {
+     margin: 0;
+     font-family: 'Poppins', sans-serif;
+     background: #000;
+     color: #fff;
+     overflow-x: hidden;
+ }
+
+ .hero-section {
+     min-height: 100vh;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-direction: column;
+     text-align: center;
+     background: linear-gradient(180deg, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.95)),
+         url('https://cdn.pixabay.com/photo/2016/11/21/15/47/black-1841904_1280.jpg') center/cover no-repeat;
+     padding: 2rem;
+ }
+
+ .hero-section h1 {
+     font-weight: 700;
+     font-size: 2.5rem;
+     margin-bottom: 1rem;
+ }
+
+ .hero-section h1 span {
+     color: #007bff;
+ }
+
+ .hero-section p {
+     font-size: 1.1rem;
+     color: #ccc;
+     max-width: 650px;
+     margin: 0 auto 2rem;
+ }
+
+ .btn-custom {
+     border-radius: 30px;
+     padding: 0.75rem 1.75rem;
+     font-weight: 600;
+ }
+
+ .btn-outline-light {
+     border: 2px solid #fff;
+     transition: 0.3s;
+ }
+
+ .btn-outline-light:hover {
+     background-color: #fff;
+     color: #000;
+ }
+
+ .btn-primary {
+     background-color: #007bff;
+     border: none;
+     transition: 0.3s;
+ }
+
+ .btn-primary:hover {
+     background-color: #0056d2;
+ }
+
+ .device-img {
+     max-width: 280px;
+     margin-top: 2.5rem;
+     animation: float 3s ease-in-out infinite;
+ }
+
+ @keyframes float {
+
+     0%,
+     100% {
+         transform: translateY(0);
+     }
+
+     50% {
+         transform: translateY(-10px);
+     }
+ }
+
+ @media (max-width: 768px) {
+     .hero-section h1 {
+         font-size: 2rem;
+     }
+
+     .hero-section p {
+         font-size: 1rem;
+     }
+ }
