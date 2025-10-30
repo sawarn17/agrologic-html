@@ -93,7 +93,7 @@ html {
 .map-container {
     flex: 1;
     min-width: 300px;
-    background: url('https://upload.wikimedia.org/wikipedia/commons/8/80/World_map_-_low_resolution_blue.png') no-repeat center center;
+    background: url('../images/about-us-2.png') no-repeat center center;
     background-size: cover;
     display: flex;
     justify-content: center;
