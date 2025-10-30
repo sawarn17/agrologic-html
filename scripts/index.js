@@ -1,8 +1,3 @@
-
-$(document).ready(function () {
-    $('#navbar').load('./nav-bar2.html');
-});
-
 $(document).ready(function () {
     $("#howWeWorkSection").load('./how-we-work.html');
 });
@@ -17,12 +12,6 @@ $(document).ready(function () {
         }
     );
 });
-
-//footer js
-$(document).ready(function () {
-    $('#footerArea').load('./footer-2.html');
-});
-
 
 //id based selection 
 $(document).ready(function () {
